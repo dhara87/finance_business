@@ -1,151 +1,141 @@
 {{ define "main" }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
-
-{{ if $data.homepage.slider_section.enable }}
-{{ with $data.homepage.slider_section }}
-
 <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="main-banner header-text" id="top">
       <div class="Modern-Slider">
         <!-- Item -->
-        {{ range $index, $elements:= .slider_items }}
-        <div class="item {{ .bg_image_url }}">
+        <div class="item item-1">
           <div class="img-fill">
               <div class="text-content">
-                <h6>{{ .heading | markdownify }}</h6>
-                <h4>{{ .title | markdownify }}</h4>
-                <p>{{ .sub_title | markdownify }}</p>
-                {{ range .buttons }}
-                <a href="{{ .link | safeURL }}" class="filled-button">{{ .label }}</a>
-                {{ end }}
+                <h6>{{ .Params.banner1_heading }}</h6>
+                <h4>{{ .Params.banner1_title }}</h4>
+                <p>{{ .Params.banner1_subtitle }}</p>
+                <a href="/contact" class="filled-button">contact us</a>
               </div>
           </div>
         </div>
-        {{ end }}
+        <!-- // Item -->
+        <!-- Item -->
+        <div class="item item-2">
+          <div class="img-fill">
+              <div class="text-content">
+                <h6>{{ .Params.banner2_heading }}</h6>
+                <h4>{{ .Params.banner2_title }}</h4>
+                <p>{{ .Params.banner1_subtitle }}</p>
+                <a href="/services" class="filled-button">our services</a>
+              </div>
+          </div>
+        </div>
+        <!-- // Item -->
+        <!-- Item -->
+        <div class="item item-3">
+          <div class="img-fill">
+              <div class="text-content">
+                <h6>{{ .Params.banner3_heading }}</h6>
+                <h4>{{ .Params.banner3_title }}</h4>
+                <p>{{ .Params.banner3_subtitle }}</p>
+                <a href="/about" class="filled-button">learn more</a>
+              </div>
+          </div>
+        </div>
         <!-- // Item -->
       </div>
   </div>
-{{ end }}
-{{ end }}
   <!-- Banner Ends Here -->
 
-{{ if $data.homepage.contact_banner.enable }}
-{{ with $data.homepage.contact_banner }}
-  
-<div class="request-form">
+  <div class="request-form">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h4>{{ .heading | markdownify }}</h4>
-          <span>{{ .title | markdownify }}</span>
+          <h4>Request a call back right now ?</h4>
+          <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
         </div>
         <div class="col-md-4">
-          {{ range .buttons }}
-          <a href="{{ .link | safeURL }}" class="border-button">{{ .label }}</a>
-          {{ end }}
+          <a href="/contact" class="border-button">Contact Us</a>
         </div>
       </div>
     </div>
   </div>
-{{ end }}
-{{ end }}
-
-{{ if $data.homepage.services_section.enable }}
-{{ with $data.homepage.services_section }}
 
   <div class="services">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>{{ .heading | markdownify }}</em></h2>
-            <span>{{ .sub_heading | markdownify }}</span>
+            <h2>Financial <em>Services</em></h2>
+            <span>{{ .Params.services_title }}</span>
           </div>
         </div>
-        {{ range $index, $elements:= .services_items }}
         <div class="col-md-4">
           <div class="service-item">
-            <img src="{{ .image_url | absURL }}" alt="{{ .name }}">
+            <img src="{{ .Params.service1_image_url }}" alt="{{ .Params.service1_name }}">
             <div class="down-content">
-              <h4>{{ .name | markdownify }}</h4>
-              <p>{{ .description | markdownify }}</p>
-              {{ range .buttons }}
-              <a href="{{ .link | safeURL }}" class="filled-button">{{ .label }}</a>
-              {{ end }}
+              <h4>{{ .Params.service1_name }}</h4>
+              <p>{{ .Params.service1_content }}</p>
+              <a href="/services" class="filled-button">Read More</a>
             </div>
           </div>
-          </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-
-{{ end }}
-{{ end }}
-
-<div class="fun-facts">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="left-content">
-          <span>Lorem ipsum dolor sit amet</span>
-          <h2>Our solutions for your <em>business growth</em></h2>
-          <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
-          <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
-          <a href="" class="filled-button">Read More</a>
         </div>
-      </div>
-      <div class="col-md-6 align-self-center">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="count-area-content">
-              <div class="count-digit">945</div>
-              <div class="count-title">Work Hours</div>
+        <div class="col-md-4">
+          <div class="service-item">
+            <img src="{{ .Params.service2_image_url }}" alt="{{ .Params.service2_name }}">
+            <div class="down-content">
+              <h4>{{ .Params.service2_name }}</h4>
+              <p>{{ .Params.service2_content }}</p>
+              <a href="/services" class="filled-button">Read More</a>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="count-area-content">
-              <div class="count-digit">1280</div>
-              <div class="count-title">Great Reviews</div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="count-area-content">
-              <div class="count-digit">578</div>
-              <div class="count-title">Projects Done</div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="count-area-content">
-              <div class="count-digit">26</div>
-              <div class="count-title">Awards Won</div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item">
+            <img src="{{ .Params.service3_image_url }}" alt="{{ .Params.service3_name }}">
+            <div class="down-content">
+              <h4>{{ .Params.service3_name }}</h4>
+              <p>{{ .Params.service2_content }}</p>
+              <a href="/services" class="filled-button">Read More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="more-info">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="more-info-content">
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-content">
+            <span>{{ .Params.business_title }}</span>
+            <h2>{{ .Params.business_subtitle }}</h2>
+            <p>{{ .Params.business_content }}</p>
+            <a href="" class="filled-button">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
           <div class="row">
             <div class="col-md-6">
-              <div class="left-image">
-                <img src="/images/more-info.jpg" alt="">
+              <div class="count-area-content">
+                <div class="count-digit">945</div>
+                <div class="count-title">Work Hours</div>
               </div>
             </div>
-            <div class="col-md-6 align-self-center">
-              <div class="right-content">
-                <span>Who we are</span>
-                <h2>Get to know about <em>our company</em></h2>
-                <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus<br><br>Praes end at dictum metus. Morbi id hendrerit lectus, nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt</p>
-                <a href="#" class="filled-button">Read More</a>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">1280</div>
+                <div class="count-title">Great Reviews</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">578</div>
+                <div class="count-title">Projects Done</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">26</div>
+                <div class="count-title">Awards Won</div>
               </div>
             </div>
           </div>
@@ -153,40 +143,87 @@
       </div>
     </div>
   </div>
-</div>
 
-
-{{ if $data.homepage.clients_review.enable }}
-{{ with $data.homepage.clients_review }}
+  <div class="more-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="more-info-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="{{ .Params.adout_image_url }}" alt="{{ .Params.about_title }}">
+                </div>
+              </div>
+              <div class="col-md-6 align-self-center">
+                <div class="right-content">
+                  <span>{{ .Params.about_title }}</span>
+                  <h2>{{ .Params.about_subtitle }}</h2>
+                  <p>{{ .Params.about_content1 }}</p>
+                  <p>{{ .Params.about_content2 }}</p>
+                  <a href="/about" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>{{ .heading | markdownify }}</h2>
-            <span>{{ .title | markdownify }}</span>
+            <h2>{{ .Params.testimonial_title }}</h2>
+            <span>{{ .Params.testimonial_subtitle }}</span>
           </div>
         </div>
         <div class="col-md-12">
           <div class="owl-testimonials owl-carousel">
-            {{ range $index, $elements:= .clients_loop }}
+            
             <div class="testimonial-item">
               <div class="inner-content">
-                <h4>{{ .name | markdownify }}</h4>
-                <span>{{ .designation | markdownify }}</span>
-                <p>"{{ .description | markdownify }}"</p>
+                <h4>{{ .Params.testimonial1_name }}</h4>
+                <span>{{ .Params.testimonial1_designation }}</span>
+                <p>{{ .Params.testimonial1_content }}</p>
               </div>
               <img src="http://placehold.it/60x60" alt="">
             </div>
-            {{ end }}
+            
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <h4>{{ .Params.testimonial2_name }}</h4>
+                <span>{{ .Params.testimonial2_designation }}</span>
+                <p>{{ .Params.testimonial2_content }}</p>
+              </div>
+              <img src="http://placehold.it/60x60" alt="">
             </div>
+            
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <h4>{{ .Params.testimonial3_name }}</h4>
+                <span>{{ .Params.testimonial3_designation }}</span>
+                <p>{{ .Params.testimonial3_content }}</p>
+              </div>
+              <img src="http://placehold.it/60x60" alt="">
+            </div>
+            
+            <div class="testimonial-item">
+              <div class="inner-content">
+                <h4>{{ .Params.testimonial4_name }}</h4>
+                <span>{{ .Params.testimonial4_designation }}</span>
+                <p>{{ .Params.testimonial4_content }}</p>
+              </div>
+              <img src="http://placehold.it/60x60" alt="">
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
   </div>
-{{ end }}
-{{ end }}
 
   <div class="callback-form">
     <div class="container">
@@ -241,23 +278,23 @@
           <div class="owl-partners owl-carousel">
           
             <div class="partner-item">
-              <img src="/images/client-01.png" title="1" alt="1">
+              <img src="{{ .Params.client1_image_url }}" title="1" alt="1">
             </div>
             
             <div class="partner-item">
-              <img src="/images/client-01.png" title="2" alt="2">
+              <img src="{{ .Params.client2_image_url }}" title="2" alt="2">
             </div>
             
             <div class="partner-item">
-              <img src="/images/client-01.png" title="3" alt="3">
+              <img src="{{ .Params.client3_image_url }}" title="3" alt="3">
             </div>
             
             <div class="partner-item">
-              <img src="/images/client-01.png" title="4" alt="4">
+              <img src="{{ .Params.client4_image_url }}" title="4" alt="4">
             </div>
             
             <div class="partner-item">
-              <img src="/images/client-01.png" title="5" alt="5">
+              <img src="{{ .Params.client5_image_url }}" title="5" alt="5">
             </div>
             
           </div>

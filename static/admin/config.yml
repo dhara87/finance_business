@@ -3,19 +3,74 @@ backend:
   branch: master
 media_folder: "static/images"
 collections:
-  - name: "aboutus" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "about us" # Used in the UI, ie.: "New Post"
-    folder: "content/english/aboutus" # The path to the folder where the documents are stored
+  - name: "index" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "index" # Used in the UI, ie.: "New Post"
+    folder: "content/english" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page header image", name: "page_header_bg", widget: "image" }
-      - { label: "Meta description", name: "metadescription", widget: "text" }
-      - { label: "About title", name: "abouttitle", widget: "string" }
-      - { label: boximage1, name: boximage1, widget: image}
-      - { label: boximage2, name: boximage2, widget: image}
-      - { label: boxcontent1, name: boxcontent1, widget: string}
-      - { label: boxcontent2, name: boxcontent2, widget: string}
-      - { label: "boxtitle1", name: "boxtitle1", widget: "string" }
-      - { label: "boxtitle2", name: "boxtitle2", widget: "string" }
-      - { label: "Intro", name: "intro", widget: "markdown" }
+    # Banner
+      # banner 1
+      - { label: "Banner 1 Heading", name: "banner1_heading", widget: "string" }
+      - { label: "Banner 1 title", name: "banner1_title", widget: "string" }
+      - { label: "Banner 1 Subtitle", name: "banner1_subtitle", widget: "text" }
+      # banner 2
+      - { label: "Banner 2 Heading", name: "banner2_heading", widget: "string" }
+      - { label: "Banner 2 title", name: "banner2_title", widget: "string" }
+      - { label: "Banner 2 Subtitle", name: "banner2_subtitle", widget: "text" }
+      # banner 3
+      - { label: "Banner 3 Heading", name: "banner3_heading", widget: "string" }
+      - { label: "Banner 3 title", name: "banner3_title", widget: "string" }
+      - { label: "Banner 3 Subtitle", name: "banner3_subtitle", widget: "text" }
+
+    # service
+      - { label: "Service Title", name: "services_title", widget: "string" }
+      # service 1
+      - { label: "Service 1 Image", name: "service1_image_url", widget: "image" }
+      - { label: "service 1 name", name: "service1_name", widget: "string" }
+      - { label: "service 1 content", name: "service1_content", widget: "text" }
+      # service 2
+      - { label: "Service 2 Image", name: "service2_image_url", widget: "image" }
+      - { label: "service 2 name", name: "service2_name", widget: "string" }
+      - { label: "service 2 content", name: "service2_content", widget: "text" }
+      # service 3
+      - { label: "Service 3 Image", name: "service3_image_url", widget: "image" }
+      - { label: "service 3 name", name: "service3_name", widget: "string" }
+      - { label: "service 3 content", name: "service3_content", widget: "text" }
+
+    # Business
+      - { label: "Business Titlle", name: "business_title", widget: "string" }
+      - { label: "Business Subtitle", name: "business_subtitle", widget: "string" }
+      - { label: "Business content", name: "business_content", widget: "text" }
+
+    # about us
+      - { label: "About Titlle", name: "about_title", widget: "string" }
+      - { label: "About Subtitle", name: "about_subtitle", widget: "string" }
+      - { label: "About content", name: "about_content1", widget: "text" }
+      - { label: "About content", name: "about_content2", widget: "text" }
+
+    # testimonial
+      - { label: "Testimonial Titlle", name: "testimonial_title", widget: "string" }
+      - { label: "Testimonial Subtitle", name: "testimonial_subtitle", widget: "string" }
+      # testimonial 1
+      - { label: "Testimonialc 1 Name", name: "testimonial1_name", widget: "string" }
+      - { label: "Testimonial 1 Designation", name: "testimonial1_designation", widget: "string" }
+      - { label: "Testimonial 1 Content", name: "testimonial1_content", widget: "text" }
+      # testimonial 2
+      - { label: "Testimonialc 2 Name", name: "testimonial2_name", widget: "string" }
+      - { label: "Testimonial 2 Designation", name: "testimonial2_designation", widget: "string" }
+      - { label: "Testimonial 2 Content", name: "testimonial2_content", widget: "text" }
+      # testimonial 3
+      - { label: "Testimonialc 3 Name", name: "testimonial3_name", widget: "string" }
+      - { label: "Testimonial 3 Designation", name: "testimonial3_designation", widget: "string" }
+      - { label: "Testimonial 3 Content", name: "testimonial3_content", widget: "text" }
+      # testimonial 4
+      - { label: "Testimonialc 4 Name", name: "testimonial4_name", widget: "string" }
+      - { label: "Testimonial 4 Designation", name: "testimonial4_designation", widget: "string" }
+      - { label: "Testimonial 4 Content", name: "testimonial4_content", widget: "text" }
+
+      # client
+      - { label: "Client 1 Image", name: "client1_image_url", widget: "image" }
+      - { label: "Client 2 Image", name: "client2_image_url", widget: "image" }
+      - { label: "Client 3 Image", name: "client3_image_url", widget: "image" }
+      - { label: "Client 4 Image", name: "client4_image_url", widget: "image" }
+      - { label: "Client 5 Image", name: "client5_image_url", widget: "image" }
