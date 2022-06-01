@@ -3,7 +3,7 @@ title: "About Us"
 url: "about"
 sub_title: "WE ARE OVER 20 YEARS OF EXPERIENCE"
 # page header background image
-page_header_bg: "/img/bg_image_3.jpg"
+page_header_bg: "/images/page-heading-bg.jpg"
 # meta description
 description: "This is meta description."
 about_title: "our solid background on finance"

@@ -2,7 +2,7 @@
 title: "Contact"
 sub_title: "Just say hello or drop us a line. You can manualy send us email on"
 # page header background image
-page_header_bg: "/img/bg_image_3.jpg"
+page_header_bg: "/images/page-heading-bg.jpg"
 # meta description
 description: "This is meta description."
 phone: "090-080-0760"
