@@ -9,7 +9,7 @@ business_content: Pellentesque ultrices at turpis in vestibulum. Aenean pretium
   tempus, porta metus vitae, faucibus augue. Fusce et venenatis ex. Quisque
   varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante
   tortor ut neque.
-about_image_url: blob:https://fantastic-chimera-9625f3.netlify.app/7458558a-44de-4d59-95cf-bbd3be328415
+about_image_url: /images/more-info.jpg
 about_title: Who we are
 about_subtitle: Get to know about our company
 about_content1: Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis
