@@ -2,7 +2,7 @@
 draft: false
 title: Home
 services_title: Lorem ipsum dolor sit amet
-business_title: Lorem ipsum dolor sit amet
+business_title: business analysis
 business_subtitle: Our solutions for your business growth
 business_content: Pellentesque ultrices at turpis in vestibulum. Aenean pretium
   elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi
