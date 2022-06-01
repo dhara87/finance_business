@@ -84,6 +84,7 @@ collections:
     create: true
     fields:
       - { label: "Banner Title", name: "title", widget: "string" }
+      - { label: "Banner Image URL", name: "slider_image_url", widget: "image" }
       - { label: "Banner Heading", name: "banner_heading", widget: "string" }
       - { label: "Banner Content", name: "banner_content", widget: "text" }
       - { label: "Banner Type", name: "type", widget: "string" }
