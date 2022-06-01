@@ -29,7 +29,6 @@ collections:
     fields:
       - { label: "Main Title", name: "title", widget: "string" }
       - { label: "About Subtitle", name: "sub_title", widget: "string" }
-      # - { label: "About URL Text", name: "url", widget: "string" }
       - { label: "About Image", name: "page_header_bg", widget: "image" }
       - { label: "About Meta Description", name: "description", widget: "text" }
       - { label: "About Title", name: "about_title", widget: "string" }
