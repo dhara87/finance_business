@@ -13,7 +13,7 @@ collections:
       - { label: "Business Title", name: "business_title", widget: "string" }
       - { label: "Business Subtitle", name: "business_subtitle", widget: "string" }
       - { label: "Business Content", name: "business_content", widget: "text" }
-      - { label: "About Image URL", name: "adout_image_url", widget: "image" }
+      - { label: "About Image URL", name: "about_image_url", widget: "image" }
       - { label: "About Title", name: "about_title", widget: "string" }
       - { label: "About Subtitle", name: "about_subtitle", widget: "string" }
       - { label: "About Content 1", name: "about_content1", widget: "text" }
