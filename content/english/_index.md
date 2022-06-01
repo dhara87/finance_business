@@ -1,9 +1,9 @@
 ---
 draft: false
 title: Home
-services_title: best services
+services_title: Lorem ipsum dolor sit amet
 business_title: Lorem ipsum dolor sit amet
-business_subtitle: "Our solutions for your business "
+business_subtitle: Our solutions for your business growth
 business_content: Pellentesque ultrices at turpis in vestibulum. Aenean pretium
   elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi
   tempus, porta metus vitae, faucibus augue. Fusce et venenatis ex. Quisque
@@ -17,6 +17,7 @@ about_content1: Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis
   ullamcorper tempus ipsum in cursus
 about_content2: Praes end at dictum metus. Morbi id hendrerit lectus, nec
   dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt
-testimonial_title: What they say about us
-testimonial_subtitle: testimonials from our greatest clients
+  ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+testimonial_title: testimonial
+testimonial_subtitle: " clients"
 ---
