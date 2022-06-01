@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "About "
+title: About Us
 sub_title: WE ARE OVER 20 YEARS OF EXPERIENCE
 page_header_bg: /static/images/more-info.jpg
 description: This is meta description.
