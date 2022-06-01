@@ -8,6 +8,7 @@
         {{ range where .Site.Pages "Type" "slider"  }}
         <div class="item item-1">
           <div class="img-fill">
+            <img src="{{ .Params.slider_image_url }}" alt="img">
               <div class="text-content">
                 <h6>{{ .Params.banner_heading }}</h6>
                 <h4>{{ .Params.title }}</h4>
@@ -52,7 +53,7 @@
             <div class="down-content">
               <h4>{{ .Params.title }}</h4>
               <p>{{ .Params.service_content }}</p>
-              <a href="/services" class="filled-button">Read More</a>
+              <a href="/" class="filled-button">Read More</a>
             </div>
           </div>
         </div>
