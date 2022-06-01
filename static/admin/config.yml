@@ -53,7 +53,7 @@ collections:
   - name: "Business Section" 
     label: "Business-section"
     folder: "content/english/home/business-section"
-    create: false
+    create: true
     fields:
       - { label: "Business Title", name: "title", widget: "string" }
       - { label: "Business Count", name: "count", widget: "string" }
