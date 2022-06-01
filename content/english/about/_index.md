@@ -2,7 +2,7 @@
 draft: false
 title: About Us
 sub_title: WE ARE OVER 20 YEARS OF EXPERIENCE
-page_header_bg: /static/images/fun-facts-bg.jpg
+page_header_bg: /images/3333.jpg
 description: This is meta description.
 about_title: our solid background on finance
 about_subtitle: Get to know about our company
