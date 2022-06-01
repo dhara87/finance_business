@@ -1,5 +1,6 @@
 ---
 title: "About Us"
+url: "about"
 sub_title: "WE ARE OVER 20 YEARS OF EXPERIENCE"
 # page header background image
 page_header_bg: "/img/bg_image_3.jpg"

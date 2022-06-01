@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+  <div class="single-services">
+    <div class="container">
+      <div class="row" id="tabs">
+        <div class="col-md-4">
+          <ul>
+            <li><a href='#tabs-1'>Market Analysis <i class="fa fa-angle-right"></i></a></li>
+            <li><a href='#tabs-2'>Financial Data <i class="fa fa-angle-right"></i></a></li>
+            <li><a href='#tabs-3'>Accounting Service <i class="fa fa-angle-right"></i></a></li>
+            <li><a href='#tabs-4'>Overall Evaluation <i class="fa fa-angle-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <section class='tabs-content'>
+            <article id='tabs-1'>
+              {{ range where .Site.Pages "Type" "market"  }}
+              <img src="{{ .Params.service_image_url }}" alt="img">
+              <h4>{{ .Params.title }}</h4>
+              <p>{{ .Params.service_content }}</p>
+              {{ end }}
+            </article>
+            <article id='tabs-2'>
+              {{ range where .Site.Pages "Type" "finance"  }}
+              <img src="{{ .Params.service_image_url }}" alt="img">
+              <h4>{{ .Params.title }}</h4>
+              <p>{{ .Params.service_content }}</p>
+              {{ end }}
+            </article>
+            <article id='tabs-3'>
+              {{ range where .Site.Pages "Type" "account"  }}
+              <img src="{{ .Params.service_image_url }}" alt="img">
+              <h4>{{ .Params.title }}</h4>
+              <p>{{ .Params.service_content }}</p>
+              {{ end }}
+            </article>
+            <article id='tabs-4'>
+              {{ range where .Site.Pages "Type" "overall"  }}
+              <img src="{{ .Params.service_image_url }}" alt="img">
+              <h4>{{ .Params.title }}</h4>
+              <p>{{ .Params.service_content }}</p>
+              {{ end }}
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

@@ -3,74 +3,110 @@ backend:
   branch: master
 media_folder: "static/images"
 collections:
-  - name: "index" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "index" # Used in the UI, ie.: "New Post"
-    folder: "content/english" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-    # Banner
-      # banner 1
-      - { label: "Banner 1 Heading", name: "banner1_heading", widget: "string" }
-      - { label: "Banner 1 title", name: "banner1_title", widget: "string" }
-      - { label: "Banner 1 Subtitle", name: "banner1_subtitle", widget: "text" }
-      # banner 2
-      - { label: "Banner 2 Heading", name: "banner2_heading", widget: "string" }
-      - { label: "Banner 2 title", name: "banner2_title", widget: "string" }
-      - { label: "Banner 2 Subtitle", name: "banner2_subtitle", widget: "text" }
-      # banner 3
-      - { label: "Banner 3 Heading", name: "banner3_heading", widget: "string" }
-      - { label: "Banner 3 title", name: "banner3_title", widget: "string" }
-      - { label: "Banner 3 Subtitle", name: "banner3_subtitle", widget: "text" }
-
-    # service
-      - { label: "Service Title", name: "services_title", widget: "string" }
-      # service 1
-      - { label: "Service 1 Image", name: "service1_image_url", widget: "image" }
-      - { label: "service 1 name", name: "service1_name", widget: "string" }
-      - { label: "service 1 content", name: "service1_content", widget: "text" }
-      # service 2
-      - { label: "Service 2 Image", name: "service2_image_url", widget: "image" }
-      - { label: "service 2 name", name: "service2_name", widget: "string" }
-      - { label: "service 2 content", name: "service2_content", widget: "text" }
-      # service 3
-      - { label: "Service 3 Image", name: "service3_image_url", widget: "image" }
-      - { label: "service 3 name", name: "service3_name", widget: "string" }
-      - { label: "service 3 content", name: "service3_content", widget: "text" }
-
-    # Business
-      - { label: "Business Titlle", name: "business_title", widget: "string" }
+  - name: "Home Page" 
+    label: "Home Page"
+    folder: "content/english"
+    create: false
+    fields:
+      - { label: "Home Title", name: "title", widget: "string" }
+      - { label: "Services Title", name: "services_title", widget: "string" }
+      - { label: "Business Title", name: "business_title", widget: "string" }
       - { label: "Business Subtitle", name: "business_subtitle", widget: "string" }
-      - { label: "Business content", name: "business_content", widget: "text" }
-
-    # about us
-      - { label: "About Titlle", name: "about_title", widget: "string" }
+      - { label: "Business Content", name: "business_content", widget: "text" }
+      - { label: "About Image URL", name: "adout_image_url", widget: "image" }
+      - { label: "About Title", name: "about_title", widget: "string" }
       - { label: "About Subtitle", name: "about_subtitle", widget: "string" }
-      - { label: "About content", name: "about_content1", widget: "text" }
-      - { label: "About content", name: "about_content2", widget: "text" }
-
-    # testimonial
-      - { label: "Testimonial Titlle", name: "testimonial_title", widget: "string" }
+      - { label: "About Content 1", name: "about_content1", widget: "text" }
+      - { label: "About Content 2", name: "about_content2", widget: "text" }
+      - { label: "Testimonial Title", name: "testimonial_title", widget: "string" }
       - { label: "Testimonial Subtitle", name: "testimonial_subtitle", widget: "string" }
-      # testimonial 1
-      - { label: "Testimonialc 1 Name", name: "testimonial1_name", widget: "string" }
-      - { label: "Testimonial 1 Designation", name: "testimonial1_designation", widget: "string" }
-      - { label: "Testimonial 1 Content", name: "testimonial1_content", widget: "text" }
-      # testimonial 2
-      - { label: "Testimonialc 2 Name", name: "testimonial2_name", widget: "string" }
-      - { label: "Testimonial 2 Designation", name: "testimonial2_designation", widget: "string" }
-      - { label: "Testimonial 2 Content", name: "testimonial2_content", widget: "text" }
-      # testimonial 3
-      - { label: "Testimonialc 3 Name", name: "testimonial3_name", widget: "string" }
-      - { label: "Testimonial 3 Designation", name: "testimonial3_designation", widget: "string" }
-      - { label: "Testimonial 3 Content", name: "testimonial3_content", widget: "text" }
-      # testimonial 4
-      - { label: "Testimonialc 4 Name", name: "testimonial4_name", widget: "string" }
-      - { label: "Testimonial 4 Designation", name: "testimonial4_designation", widget: "string" }
-      - { label: "Testimonial 4 Content", name: "testimonial4_content", widget: "text" }
+      
 
-      # client
-      - { label: "Client 1 Image", name: "client1_image_url", widget: "image" }
-      - { label: "Client 2 Image", name: "client2_image_url", widget: "image" }
-      - { label: "Client 3 Image", name: "client3_image_url", widget: "image" }
-      - { label: "Client 4 Image", name: "client4_image_url", widget: "image" }
-      - { label: "Client 5 Image", name: "client5_image_url", widget: "image" }
+  - name: "About Section" 
+    label: "About Section"
+    folder: "content/english/about"
+    create: false
+    fields:
+      - { label: "Main Title", name: "title", widget: "string" }
+      - { label: "About Subtitle", name: "sub_title", widget: "string" }
+      # - { label: "About URL Text", name: "url", widget: "string" }
+      - { label: "About Image", name: "page_header_bg", widget: "image" }
+      - { label: "About Meta Description", name: "description", widget: "text" }
+      - { label: "About Title", name: "about_title", widget: "string" }
+      - { label: "About Subtitle", name: "about_subtitle", widget: "string" }
+      - { label: "About Content1", name: "about_content1", widget: "text" }
+      - { label: "About Content2", name: "about_content2", widget: "text" }
+      - { label: "About Background Image ", name: "about_bg_image_url", widget: "image" }
+
+  - name: "Contact Section" 
+    label: "Contact"
+    folder: "content/english/contact"
+    create: false
+    fields:
+      - { label: "Contact Title", name: "title", widget: "string" }
+      - { label: "Contact Subtitle", name: "sub_title", widget: "string" }
+      - { label: "Contact Image", name: "page_header_bg", widget: "image" }
+      - { label: "Contact Image", name: "page_header_bg", widget: "string" }
+      - { label: "Contact Meta Description", name: "description", widget: "text" }
+      - { label: "Contact No", name: "phone", widget: "string" }
+      - { label: "Contact Email", name: "email", widget: "string" }
+      - { label: "Contact Address", name: "location", widget: "string" }
+      
+  - name: "Business Section" 
+    label: "Business-section"
+    folder: "content/english/home/business-section"
+    create: false
+    fields:
+      - { label: "Business Title", name: "title", widget: "string" }
+      - { label: "Business Count", name: "count", widget: "string" }
+      - { label: "Business Type", name: "type", widget: "string" }
+   
+  - name: "Client Section" 
+    label: "Client-Section"
+    folder: "content/english/home/client-section"
+    create: true
+    fields:
+      - { label: "Client Title", name: "title", widget: "string" }
+      - { label: "Client Image", name: "client_image_url", widget: "image" }
+      - { label: "Client Type", name: "type", widget: "string" }
+   
+  - name: "Financial Services" 
+    label: "Financial-Services"
+    folder: "content/english/home/financial-services"
+    create: true
+    fields:
+      - { label: "Service Title", name: "title", widget: "string" }
+      - { label: "Service Image URL", name: "service_image_url", widget: "image" }
+      - { label: "Service Content", name: "service_content", widget: "text" }
+      - { label: "Service Type", name: "type", widget: "string" }
+
+  - name: "Banner Section" 
+    label: "Banner"
+    folder: "content/english/home/banner-section"
+    create: true
+    fields:
+      - { label: "Banner Title", name: "title", widget: "string" }
+      - { label: "Banner Heading", name: "banner_heading", widget: "string" }
+      - { label: "Banner Content", name: "banner_content", widget: "text" }
+      - { label: "Banner Type", name: "type", widget: "string" }
+   
+  - name: "Testimonial Section" 
+    label: "Testimonial"
+    folder: "content/english/home/testimonials"
+    create: true
+    fields:
+      - { label: "Testimonial Title", name: "title", widget: "string" }
+      - { label: "Testimonial Designation", name: "testimonial_designation", widget: "string" }
+      - { label: "Testimonial Content", name: "testimonial_content", widget: "text" }
+      - { label: "Testimonial Type", name: "type", widget: "string" }
+    
+    
+  - name: "Our Service" 
+    label: "Our-Service"
+    folder: "content/english/our-services"
+    create: true
+    fields:
+      - { label: "Service Name", name: "title", widget: "string" }
+      - { label: "Service Image URL", name: "service_image_url", widget: "image" }
+      - { label: "Service Content", name: "service_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
