@@ -1,4 +1,5 @@
 ---
+title: "Home"
 services_title: "Aliquam id urna imperdiet libero mollis hendrerit"
 business_title: "Lorem ipsum dolor sit amet"
 business_subtitle: "Our solutions for your business growth"
