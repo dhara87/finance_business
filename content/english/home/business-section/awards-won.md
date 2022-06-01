@@ -1,5 +1,5 @@
 ---
-title: Awards Won by us
+title: Awards Won 
 count: "50"
 type: business
 ---
