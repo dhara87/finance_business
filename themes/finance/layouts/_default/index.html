@@ -45,7 +45,7 @@
             <span>{{ .Params.services_title }}</span>
           </div>
         </div>
-        {{ range first 3 (where .Site.Pages "Type" "service")  }}
+        {{ range first 5 (where .Site.Pages "Type" "service")  }}
         <div class="col-md-4">
           <div class="service-item">
             <img src="{{ .Params.service_image_url }}" alt="img">
