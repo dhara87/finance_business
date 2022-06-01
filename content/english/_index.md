@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Home
-services_title: Aliquam id urna imperdiet libero mollis hendrerit
+services_title: best services
 business_title: Lorem ipsum dolor sit amet
 business_subtitle: "Our solutions for your business "
 business_content: Pellentesque ultrices at turpis in vestibulum. Aenean pretium
