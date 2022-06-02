@@ -11,6 +11,6 @@ about_content1: Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id
   congue, mi odio vehicula tellus, sit amet malesuada justo sem.
 about_content2: Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam
   eleifend, ullamcorper dui nec, luctus quam.
-about_bg_image_url: /images/images.jpg
+about_bg_image_url: /images/slide_01.jpg
 url: about
 ---
